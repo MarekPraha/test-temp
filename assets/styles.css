@@ -1,0 +1,178 @@
+html{
+
+    width:100vw;
+    max-width: 100%;
+    height:100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color:#d2dae2;
+
+}
+
+.line{
+
+    border:1px dashed #808e9b;
+    margin:0 30%;
+}
+
+header
+{
+justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    display:flex;
+padding:3% 30% 1% 30%;
+letter-spacing: 2px;
+
+}
+
+
+
+header h3{
+
+font-size:30px;
+align-self: start;
+}
+
+
+
+
+
+
+body{
+    
+    margin:0;
+width: 100vw;
+padding:0;
+overflow-x: hidden;
+
+}
+
+.image{
+padding:2%;
+width: 10vw;;
+height: 10vh;
+
+
+}
+
+#circle{
+border-radius:100px;
+background: #1e272e;
+width:50px;
+height:50px;
+border:none;
+outline: none;
+color:white
+}
+
+#circle i{
+
+font-size:20px;
+
+}
+
+
+
+
+
+@media (max-width:500px){
+
+.text{
+
+margin: 3% 10%;
+
+}
+
+}
+
+
+@media (min-width:1200px){
+
+
+header h1{
+
+font-size: 75px;
+
+}
+
+
+header h2{
+
+
+font-size:40px;
+
+}
+
+}
+
+
+
+
+.articles{
+display: flex;
+margin:3% 30%;
+justify-content: center;
+flex-direction: column;
+text-decoration: 0;
+}
+
+.articles h2{
+
+
+font-size:50px;
+
+}
+
+
+.articles p{
+
+color:grey;
+font-size:20px;
+}
+
+.articles h2, p{
+
+margin:0;
+}
+.body{
+
+    font-family: 'Libre Baskerville', serif;
+   letter-spacing: 1px;
+    
+}
+
+.container{
+
+display:flex;
+flex-direction: column;
+margin:0 0 8% 0;
+}
+
+.container a{
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    color:#00b894;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size:25px;
+
+}
+
+
+footer{
+
+margin-top:5%;
+
+
+display: flex;
+justify-content: center;
+
+}
+
+a{
+
+text-decoration: none;
+
+}

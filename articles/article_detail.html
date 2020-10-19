@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/styles2.css?{% now 'U' %}"/>
+    <link rel="stylesheet" href="/static/styles.css?{% now 'U' %}"/>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    
+    <header>
+
+       <div class="textik">
+
+                <h3>CZECH - NORWEGIAN COOPERATION</h3>
+                <a style="color:#00b894; font-weight:bold;" href="http://127.0.0.1:8000/admin">Admin</a>
+        </div>  
+            
+            
+            
+            
+        <div class="switch"><button id="circle" onclick="myFunction()"><i class="far fa-moon"></i></button></div>
+
+
+    </header>
+    
+
+    <div class="article">
+        <img src="{{article.thumb.url}}">
+
+        <div class="text">
+        <h2>{{ article.title }}</h2>
+        <p id="body">{{ article.body }}</p>
+        <p>{{ article.date }}</p>
+        </div>
+    </div>
+
+
+<script type="application/javascript">
+
+var state = false;
+var select = document.getElementsByTagName("body")[0]
+
+function myFunction() {
+    if (state == false) {
+        // stuff for 'playnow' action
+        select.style.color = "white";
+        select.style.background = "#1e272e";
+        state = true;
+        return;
+    }
+
+    if (state == true) {
+        // stuff for 'stop' action
+        select.style.color = "black";
+        select.style.background = "#d2dae2";
+        state = false;
+        return;
+    }
+}
+
+
+
+
+</script>
+
+</body>
+</html>
