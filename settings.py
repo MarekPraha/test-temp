@@ -46,7 +46,7 @@ MIDDLEWARE = [
 
     'whitenoise.middleware.WhiteNoiseMiddleware',
 
-
+    'whitenoise.storage.CompressedManifestStaticFilesStorage',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -74,8 +74,7 @@ TEMPLATES = [
 ]
 
 
-from whitenoise.django import DjangoWhiteNoise
-application = DjangoWhiteNoise(application)
+
 
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
